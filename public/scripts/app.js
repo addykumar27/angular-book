@@ -11,7 +11,7 @@ function config (  $routeProvider,   $locationProvider  )  {
       controller: 'booksIndexController',
       controllerAs: 'booksIndexCtrl'  
     })
-    .when('/pokemons/:id', {
+    .when('/books/:id', {
       templateUrl: '../../templates/booksshow.html',
       controller: 'booksShowController',
       controllerAs: 'booksShowCtrl'

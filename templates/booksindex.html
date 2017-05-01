@@ -1,0 +1,16 @@
+<h2>Books Glore</h2>
+<div ng-repeat="book in booksIndexCtrl.books">
+	<hr>
+	<div class="row">
+
+		<div class="col-xs-4">
+			<img ng-src="{{book.image}}" class="img-responsive">
+		</div>
+		<div class="col-xs-8">
+			<h5><a ng-href="/books/{{book._id}}">{{book.name}}</a></h5>
+			<br>
+			<p class="small">Book Author {{book.author}}</p>
+			<p class="small">ReleaseDate {{book.releaseDate}}</p>
+		</div>
+	</div>
+</div>

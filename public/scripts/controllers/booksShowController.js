@@ -1,6 +1,7 @@
 angular
   .module('bookApp')
   .controller('booksShowController', booksShowController);
+  console.log('show book name');
  
 
 booksShowController.$inject=['$http', '$routeParams', '$location'];

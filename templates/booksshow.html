@@ -1,0 +1,16 @@
+<h2>{{booksShowCtrl.book.name}}</h2>
+<hr>
+<div class="row">
+	<div class="col-xs-6">
+		<img ng-src="{{booksShowCtrl.book.name}}" class="img-responsive">
+	</div>
+	<div class="col-xs-6">
+		<p><strong>Author:</strong> {{booksShowCtrl.book.author}}</p>
+		<p><strong>ReleaseDate:</strong> {{booksShowCtrl.book.releaseDate}}</p>
+		<br>
+
+	<div>
+		<a href="#" ng-click ="booksShowCtrl.editbooks(booksShowCtrl.book)" class="btn btn-default">Edit<span class="glyphicon glyphicon-pencil"></span></a>&nbsp;
+		
+		<a href="#" ng-click="booksShowCtrl.deletebook(booksShowCtrl.book)" class="btn btn-default">Delete <span class="glyphicon glyphicon-trash"></span></a>
+	</div>	"
