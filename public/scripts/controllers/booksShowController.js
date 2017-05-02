@@ -21,9 +21,9 @@ function booksShowController($http, $routeParams, $location) {
   }
   function onError(error){
     console.log('there was an error: ', error);
-  }
+  };
 
-   vm.editbooks = function(book) {
+  vm.editbooks = function(book) {
     console.log('updating book: ', book);
     $http({
       method: 'PUT',
@@ -56,4 +56,4 @@ function booksShowController($http, $routeParams, $location) {
     }
   };
 }
- 
+  
